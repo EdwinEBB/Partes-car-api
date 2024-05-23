@@ -6,7 +6,7 @@ const improvementroutes=express.Router();
 
 
 improvementroutes.get('/getallimpro',getAllImprovements);
-improvementroutes.get('/getimprovement/:id',getImprovementById);
+improvementroutes.get('/getimpro/:id',getImprovementById);
 improvementroutes.post('/createimpro',createImprovement);
 improvementroutes.put('/updateimpro/:id',updateImprovementById);
 improvementroutes.delete('/deleteimpro/:id',deleteImprovementById);

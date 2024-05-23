@@ -13,13 +13,15 @@ const port=process.env.port;
 //Conexión a la base de datos
 Mongoconnet();
 
-//Rutas
-app.use('/improvements',improvementroutes);
-app.use('/tuningparts',tuningroutes);
+
 
 //middleware
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
+//Rutas
+app.use('/improvements',improvementroutes);
+app.use('/tuningparts',tuningroutes);
 
 app.listen(port,()=>{
     console.log(`Servidor inicado en el puerto ${port}`)

@@ -17,6 +17,7 @@ export const createImprovement = async (req, res) => {
     stock: req.body.stock,
   });
 
+
   try {
     const newImprovement = await improvement.save();
     res.status(201).json(newImprovement);
