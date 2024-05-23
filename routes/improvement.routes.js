@@ -1,13 +1,14 @@
 import express from 'express';
+import { createImprovement, deleteImprovementById, getAllImprovements, getImprovementById, updateImprovementById } from '../controllers/improvementController';
 
 
 const improvementroutes=express.Router();
 
 
-improvementroutes.get('/getallimpro');
-improvementroutes.get('/getimprovement/:id');
-improvementroutes.post('/createimpro');
-improvementroutes.put('/updateimpro/:id');
-improvementroutes.delete('/deleteimpro/:id');
+improvementroutes.get('/getallimpro',getAllImprovements);
+improvementroutes.get('/getimprovement/:id',getImprovementById);
+improvementroutes.post('/createimpro',createImprovement);
+improvementroutes.put('/updateimpro/:id',updateImprovementById);
+improvementroutes.delete('/deleteimpro/:id',deleteImprovementById);
 
 export default improvementroutes;
