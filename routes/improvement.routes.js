@@ -1,5 +1,5 @@
 import express from 'express';
-import { createImprovement, deleteImprovementById, getAllImprovements, getImprovementById, updateImprovementById } from '../controllers/improvementController';
+import { createImprovement, deleteImprovementById, getAllImprovements, getImprovementById, updateImprovementById } from '../controllers/improvementController.js';
 
 
 const improvementroutes=express.Router();

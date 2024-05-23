@@ -1,5 +1,5 @@
 import express from 'express';
-import { createTuningPart, deleteTuningPartById, getAllTuningParts, getTuningPartById, updateTuningPartById } from '../controllers/tuningPartsControllers';
+import { createTuningPart, deleteTuningPartById, getAllTuningParts, getTuningPartById, updateTuningPartById } from '../controllers/tuningPartsControllers.js';
 
 const tuningroutes=express.Router();
 
