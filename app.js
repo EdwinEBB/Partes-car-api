@@ -22,6 +22,20 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //Rutas
 app.use('/improvements',improvementroutes);
 app.use('/tuningparts',tuningroutes);
+app.get('/',(res,req)=>{
+    res.json({message:`Hola, bienvenido a la api de partes de autos,
+    esta api esta divida en 2 secciones:
+    -improvements o mejoras
+    -tuning parts o partes de tuneo
+    para acceder a cada sección debes añadir las siguientes rutas al link
+    para improvements:
+    /improvements
+    /improvements/getallimpro
+    /improvements/getimpro/id
+    /improvements/createimpro
+    /improvements/updateimpro/id
+    /improvements/deleteimpro/id`})
+})
 
 app.listen(port,()=>{
     console.log(`Servidor inicado en el puerto ${port}`)
