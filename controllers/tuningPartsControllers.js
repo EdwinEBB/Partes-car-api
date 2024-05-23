@@ -1,4 +1,4 @@
-import TuningPart from '../models/Tuningpart.js';
+import TuningPart from '../models/tuningpart.js';
 
 export const getAllTuningParts = async (req, res) => {
   try {

@@ -1,4 +1,4 @@
-import Improvement from '../models/Improvement.js';
+import Improvement from '../models/improvement.js';
 
 export const getAllImprovements = async (req, res) => {
   try {
