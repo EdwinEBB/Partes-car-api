@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
         <p>Para acceder a cada sección, utiliza las siguientes rutas adicionales:</p>
         <h2>Para mejoras:</h2>
         <ul>
-            <li>/improvements</li>
+            <li>/improvements: endpoint</li>
             <li>/improvements/getallimpro</li>
             <li>/improvements/getimpro/id</li>
             <li>/improvements/createimpro</li>
@@ -50,7 +50,7 @@ app.get('/', (req, res) => {
         </ul>
         <h2>Para partes de tuneo:</h2>
         <ul>
-            <li>/tuningparts</li>
+            <li>/tuningparts endpoint</li>
             <li>/tuningparts/getalltuning</li>
             <li>/tuningparts/gettuning/id</li>
             <li>/tuningparts/createtuning</li>
