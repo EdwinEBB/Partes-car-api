@@ -4,7 +4,11 @@ import { createImprovement, deleteImprovementById, getAllImprovements, getImprov
 
 const improvementroutes=express.Router();
 
-
+const tuningroutes=express.Router();
+tuningroutes.get('/',(req,res)=>{
+    res.send(`
+    <H1>HOLA ESTAS EN IMPROMENT</H1>`);
+})
 improvementroutes.get('/getallimpro',getAllImprovements);
 improvementroutes.get('/getimpro/:id',getImprovementById);
 improvementroutes.post('/createimpro',createImprovement);
