@@ -48,6 +48,15 @@ app.get('/', (req, res) => {
             <li>/improvements/updateimpro/id</li>
             <li>/improvements/deleteimpro/id</li>
         </ul>
+        <h2>Para partes de tuneo:</h2>
+        <ul>
+            <li>/tuningparts</li>
+            <li>/tuningparts/getalltuning</li>
+            <li>/tuningparts/gettuning/id</li>
+            <li>/tuningparts/createtuning</li>
+            <li>/tuningparts/updatetuning/id</li>
+            <li>/tuningparts/deletetuning/id</li>
+        </ul>
     </body>
     </html>
     `;
